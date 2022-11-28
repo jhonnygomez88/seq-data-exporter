@@ -11,8 +11,6 @@ ORACLE_USER=MYUSERNAME
 ```
 
 ## Installation
-
-### Help
 ```sh
 npm i
 ```
