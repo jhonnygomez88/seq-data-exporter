@@ -28,7 +28,6 @@ const getSQLBatches = (table, attributes, condition, count, batchSize) => {
         sqls.push(sql);
 
     }
-    console.log(sqls)
     return sqls;
 }
 
