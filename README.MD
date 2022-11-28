@@ -19,12 +19,12 @@ npm i
 
 ### Help
 ```sh
-node index.js --help
+npm run start -- --help
 ```
 
 ### Example
 ```sh
-node index.js 
+npm run start -- 
 -t 'EMAIL_QUEUE' 
 -k 'ID_EMAIL' 
 -a 'ID_EMAIL,DS_EMAIL1,DS_EMAIL2,NM_RECIPIENT,DS_SUBJECT,IN_HTML,DT_SENT,ID_ADDED,DT_ADDED,ID_UPDATED,DT_UPDATED' 
