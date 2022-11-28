@@ -16,10 +16,7 @@ const generateCSV = async (FILENAME, TABLE, SEQUENCE_ATTRUBTE, ATTRIBUTES, CONDI
     let i = 1;
     for await (const sql of batches) {
         console.log(`Executing query (${i}/${batches.length})`);
-        //console.log(`EXECUTING: "${sql}"`);
-        //console.time("Elapsed time");
         const res = await executeQuery(sql);
-        //console.timeEnd("Elapsed time");
         const csv = getCSV(res, isFirst);
         console.log(`Writing ${res.length} registers to ${FILENAME}...`);
         if (isFirst) {
